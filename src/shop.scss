@@ -1,0 +1,81 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    
+    input, select, textarea, button {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+      box-sizing: border-box;
+      
+      &:focus {
+        outline: none;
+        border-color: #0077ff;
+      }
+    }
+    
+    input[type="number"] {
+      appearance: none;
+      -moz-appearance: textfield;
+      width: calc(100% - 2rem);
+      
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        appearance: none;
+        margin: 0;
+      }
+    }
+    
+    select {
+      width: 100%;
+      background-color: white;
+    }
+    
+    textarea {
+      resize: vertical;
+    }
+
+    .tags{
+      display: flex;
+      gap: 10px;
+
+      small{
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+    }
+    
+    .quantity {
+      display: flex;
+      align-items: center;
+      
+      button {
+        border: none;
+        background-color: #f1f1f1;
+        font-size: 1.2rem;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        
+        &:hover {
+          background-color: #e2e2e2;
+        }
+        
+        &:active {
+          transform: scale(0.95);
+        }
+      }
+    }
+  }
+  
