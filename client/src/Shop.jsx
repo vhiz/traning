@@ -1,6 +1,6 @@
 import { useReducer, useRef } from "react";
 import "./shop.scss";
-import { INITIAL_STATE, formReducer } from "./formReducer";
+import { INITIAL_STATE, formReducer } from "./reducers/formReducer";
 export default function Shop() {
   const [state, dispatch] = useReducer(formReducer, INITIAL_STATE);
   const handleChange = (e) => {

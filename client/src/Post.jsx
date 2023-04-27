@@ -1,5 +1,5 @@
 import { useReducer } from "react";
-import { INITIAL_STATE, postReducer } from "./postReducer";
+import { INITIAL_STATE, postReducer } from "./reducers/postReducer";
 
 export default function Post() {
   const [state, dispatch] = useReducer(postReducer, INITIAL_STATE);
